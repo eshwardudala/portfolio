@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Eshwar Dudala" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Eshwar Dudala">Eshwar Dudala</h1>
+
+          <p class="title">Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:eshwardudala2001@gmail.com?subject=Hello%20Eshwar&body=I%20would%20like%20to%20connect%20with%20you" class="contact-link">eshwardudala2001@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+17042937783" class="contact-link">+1 (704) 293-7783</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2001-07-20">July 20, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>212 Barton Creek Dr APt-H,
+                Charlotte, NC 28262, USA
+              </address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+  <!-- LinkedIn -->
+  <li class="social-item">
+    <a href="https://www.linkedin.com/in/eshwar-dudala-788868208/" target="_blank" class="social-link">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+
+          <li class="social-item">
+            <a href="https://wa.me/17042937783" target="_blank" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+      </li>
+      <li class="social-item">
+  <a href="mailto:eshwardudala2001@gmail.com?subject=Hello%20Eshwar" class="social-link">
+    <ion-icon name="mail-outline"></ion-icon>
+  </a>
+</li>
+
+          
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certifications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Career Bot</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Eshwar Dudala, a dedicated Computer Science student at the University of North Carolina at Charlotte, expected to graduate in May 2026. With a solid foundation in programming languages such as Python, Java, C++, and JavaScript, I have developed skills in web development, data structures, algorithms, and database management. My academic journey has been marked by hands-on projects that showcase my ability to apply theoretical knowledge to practical scenarios.
+          </p>
+
+          <p>
+            Aspiring Software Engineer with strong foundations in Artificial Intelligence, Machine Learning, and Full-Stack Development. Hands-on experience developing data-driven applications, cloud-integrated ML systems, and AI-powered dashboards using Python, TensorFlow, and scikit-learn. Passionate about applying engineering principles to build innovative, responsible AI solutions that empower people and organizations. Certified AWS Cloud Practitioner and Snowflake SnowPro Core.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm good at</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Engineering</h4>
+
+                <p class="service-item-text">
+                 I can build and maintain data pipelines, ensuring efficient data flow and accessibility for analysis.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science</h4>
+
+                <p class="service-item-text">
+                  I can analyze and interpret complex data to help companies make informed decisions.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Building Agents</h4>
+
+                <p class="service-item-text">
+                  I can create intelligent agents that can perform tasks autonomously.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Power Bi Developer</h4>
+
+                <p class="service-item-text">
+                  I can design and develop interactive dashboards and reports using Power BI.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+       
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">The University of North Carolina at Charlotte</h4>
+
+              <span>2025 — Now</span>
+
+              <p class="timeline-text">
+                I am currently pursuing a Master’s in Information Technology at the University of North Carolina at Charlotte,
+                 with an expected graduation date of May 2026. 
+                 My coursework encompasses advanced areas such as Machine Learning, Applied Databases, Algorithms and Data Structures,
+                  Artificial Intelligence, Cloud Computing, and Software Development. Maintaining a 4.0/4.0 GPA,
+                   I am building a strong foundation in both technical and analytical skills, preparing to contribute effectively to innovative solutions and advancements in the field of Information Technology.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Jawaharlal Nehru Technological University, Hyderabad, India</h4>
+
+              <span>2019 — 2023</span>
+
+              <p class="timeline-text">
+                I hold a Bachelor of Technology in Electronics and Communication Engineering, graduating with a CGPA of 9.24/10. 
+                My academic experience provided a strong technical foundation through coursework in Data Structures and Algorithms, Deep Learning,
+                 Internet of Things (IoT), Java, and Python, equipping me with both analytical and programming skills to tackle complex engineering and technology challenges.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High School Diploma</h4>
+
+              <span>2017 — 2019</span>
+
+              <p class="timeline-text">
+                Completed intermediate education with a strong emphasis on Physics, Chemistry, and Mathematics, achieving 98%, 
+                and building a solid foundation for future engineering studies.
+              </p>
+
+            </li>
+            
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Analyst</h4>
+
+              <span>2023 — 2024</span>
+
+                
+                  <ul class="timeline-text" style="color: aliceblue;">
+                    <li>Designed Power BI dashboards to meet client expectations associated to usage analytics.</li>
+                    <li>Implemented ETL pipelines using Azure Data Factory and Azure Data Explorer (Kusto) to ingest and aggregate data from multiple ADLS sources; optimized SQL queries for downstream reporting.</li>
+                    <li>Implemented Power Automate workflows to detect data anomalies and alert stakeholders, improving anomaly detection and reducing manual triage.</li>
+                    <li>Managed ad-hoc data requests by authoring extraction scripts and ADF pipelines to deliver curated datasets for analytics and reporting.</li>
+                  </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Teaching Assistant</h4>
+
+              <span>June 2022 – June 2023</span>
+
+              <p class="timeline-text">
+                •	Trained 100+ first-year undergraduates in Data Structures using C and Python; prepared lab materials and delivered hands-on sessions that improved lab pass Teaching Assistant and Mentor, 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Student Mentor </h4>
+
+              <span>Apr 2021 – Mar 2022</span>
+
+              <p class="timeline-text">
+                •	Mentored students on data structures and algorithms, providing guidance and resolving queries to enhance their understanding and performance. 
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+        <section class="skill">
+          <h3 class="h3 skills-title">Technical Skills</h3>
+          
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Languages</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+              <p class="skill-details">Python, Java, C++, C, SQL</p>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">AI/ML & Data Science</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+              <p class="skill-details">TensorFlow, PyTorch, scikit-learn, Pandas, NumPy, OpenPose, SVM, LLMs (Groq Llama, Gemini, ChatGPT)</p>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Engineering</h5>
+                <data value="88">88%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+              <p class="skill-details">Azure Data Factory, Azure Synapse, Data Lake, ETL Pipelines, Power BI, Data Warehousing, Data Visualization, Snowflake, Redshift</p>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud & DevOps</h5>
+                <data value="55">55%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+              <p class="skill-details">Azure, AWS, CI/CD, Terraform, Serverless Computing</p>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web Technologies</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+              <p class="skill-details">React, Streamlit, HTML, CSS, RESTful APIs, Flask</p>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Version Control & OS</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+              <p class="skill-details">Git, GitHub, Windows, Linux, macOS</p>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="certifications">
+
+        <header>
+          <h2 class="h2 article-title">Certifications</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn="all">All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn="snowflake">Snowflake</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn="aws">AWS</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn="datacamp">Datacamp</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Snowflake</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AWS</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Datacamp</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="snowflake">
+              <a href="./assets/images/Snowflake/Snow Flake Snow Pro Core.pdf" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Snowflake_Cover.png" alt="SnowPro Core Certification" loading="lazy">
+                </figure>
+                <h3 class="project-title">SnowPro Core Certification</h3>
+                <p class="project-category">Snowflake</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="aws">
+              <a href="./assets/images/AWS/AWS Certified Cloud Practitioner certificate.pdf" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/AWS_cover.png" alt="AWS Cloud Practitioner" loading="lazy">
+                </figure>
+                <h3 class="project-title">AWS Cloud Practitioner</h3>
+                <p class="project-category">AWS</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="datacamp">
+              <a href="./assets/images/Datacamp/Datacamp_Python.pdf" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Intro_to_python.png" alt="Python Certification" loading="lazy">
+                </figure>
+                <h3 class="project-title">Python Programming</h3>
+                <p class="project-category">Datacamp</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="datacamp">
+              <a href="./assets/images/Datacamp/Datacamp_Intro_to_SQL.pdf" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/IntoTo_SQL.png" alt="SQL Certification" loading="lazy">
+                </figure>
+                <h3 class="project-title">SQL Fundamentals</h3>
+                <p class="project-category">Datacamp</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="datacamp">
+              <a href="./assets/images/Datacamp/Data camp pyspark.pdf" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Ml_with_pyspark.png" alt="PySpark Certification" loading="lazy">
+                </figure>
+                <h3 class="project-title">PySpark</h3>
+                <p class="project-category">Datacamp</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="datacamp">
+              <a href="./assets/images/Datacamp/Data camp pytorch.pdf" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/DeepLearning_pytorch.png" alt="PyTorch Certification" loading="lazy">
+                </figure>
+                <h3 class="project-title">PyTorch Fundamentals</h3>
+                <p class="project-category">Datacamp</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="career bot">
+
+        <header>
+          <h2 class="h2 article-title">Career Bot</h2>
+        </header>
+
+        <section class="career-bot">
+          <div class="bot-container" style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <p class="bot-description" style="margin-bottom: 20px; text-align: center; color: var(--light-gray);">
+              Interact with my AI-powered Career Conversation Bot. This bot can help you with career guidance, resume tips, and professional development advice.
+            </p>
+            
+            <div class="bot-iframe-container" style="position: relative; width: 100%; height: 700px; overflow: hidden; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+              <iframe
+                src="https://eshwar5617-career-conversation.hf.space"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                title="Eshwar's Career Conversation Bot"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.578732979892!2d-80.73373548894212!3d35.31060397931791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c06dde434d1%3A0xd899c53f5d4080f1!2s212%20Barton%20Creek%20Dr%2C%20Charlotte%2C%20NC%2028262!5e0!3m2!1sen!2sus!4v1699053532180!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
